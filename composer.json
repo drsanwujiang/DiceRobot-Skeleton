@@ -1,0 +1,32 @@
+{
+  "name": "drsanwujiang/dicerobot-skeleton",
+  "type": "project",
+  "description": "DiceRobot skeleton application.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Drsanwujiang",
+      "email": "drsanwujiang@gmail.com",
+      "homepage": "https://www.drsanwujiang.com/"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/drsanwujiang/DiceRobot-Skeleton/issues",
+    "source": "https://github.com/drsanwujiang/DiceRobot-Skeleton"
+  },
+  "require": {
+    "php": "^7.4",
+    "ext-swoole": "^4.5.5",
+    "drsanwujiang/dicerobot": "dev-dev",
+    "selective/array-reader": "^0.3.0"
+  },
+  "require-dev": {
+    "swoole/ide-helper": "^4.5"
+  },
+  "scripts": {
+    "start": "php dicerobot.php"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
