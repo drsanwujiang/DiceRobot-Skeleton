@@ -26,7 +26,7 @@ Co\run(function () {
     $app->initialize();
 
     // Register routes
-    $app->registerRoutes(require __DIR__ . "/routes.php");
+    $app->registerRoutes(require __DIR__ . "/custom_routes.php");
 
     // Start event loop
     $server->start();
