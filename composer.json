@@ -17,7 +17,7 @@
   "require": {
     "php": "^7.4",
     "ext-swoole": "^4.5.5",
-    "drsanwujiang/dicerobot": "dev-dev"
+    "drsanwujiang/dicerobot": "^2.0.0"
   },
   "require-dev": {
     "swoole/ide-helper": "^4.5"
