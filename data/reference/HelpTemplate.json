@@ -70,7 +70,7 @@
             "dnd": ".dnd - DND 人物卡生成\n生成 DND 冒险者人物卡。\n · COC 版本默认 7 版，生成次数默认 1 次\n\n【格式】\n.dnd [生成次数]\n\n【用法示例】\n.dnd\n.dnd8",
             "card": ".card - COC 人物卡绑定\n绑定 COC 人物卡。使用前请先在人物卡编辑器(https://tool.drsanwujiang.com/cardeditor/)中创建人物卡。\n\n【格式】\n.card\n.card [人物卡 ID]\n\n不带人物卡 ID 为解绑人物卡\n\n【用法示例】\n.card\n.card 233",
             "attribute": ".hp/mp/san - COC 人物卡属性变更\n修改 COC 人物卡的属性，支持 HP、MP 和 SAN。\n · 进行属性变更前，必须先绑定人物卡，参见 .card - COC 人物卡绑定\n · 减值表达式可以为非负整数（0，1，2……）也可以是掷骰表达式（D3，2D5，5D10K2……）\n · 人物卡属性变更会同时改变本地和云端中的人物卡的值，无需使用 .card 指令同步\n\n.card 的用法请单独使用 help 指令查询\n\n【格式】\n.hp [增减值表达式]\n.mp [增减值表达式]\n.san [增减值表达式]\n\n【用法示例】\n.hp+5\n.hp-D3\n.mp-2\n.mp+2D3\n.san+1\n.san-3D5K2",
-            "name": ".name - 生成随机昵称\n生成随机的昵称。\n · 默认生成中文名，生成次数默认为1\n\n【格式】\n.name [cn/jp/en] [生成次数]\n\n【用法示例】\n.name\n.name 5\n.name jp\n.name en 10",
+            "name": ".name - 生成随机名称\n生成随机的名称。\n · 默认生成中文名，生成次数默认为1\n\n【格式】\n.name [cn/jp/en] [生成次数]\n\n【用法示例】\n.name\n.name 5\n.name jp\n.name en 10",
             "nn": ".nn - 修改昵称\n设置你在本群聊的昵称（或者真 名 解 放）。\n · 昵称的显示顺序为：本群聊的昵称 > QQ 昵称。\n \n【格式】\n.nn\n.nn [昵称]\n\n不带昵称则为清除昵称\n\n【用法示例】\n.nn\n.nn Sakura Tsang",
             "set": ".set - 设置默认骰子面数\n设置本群聊/私聊中掷骰时的骰子的默认面数。\n · 骰子面数的优先级为：表达式中明确的面数（D100） > 本群聊/私聊的默认面数\n · 在没有设置的情况下，本群聊/私聊的默认面数为 100\n · 设置之后，在指令中存在 “D”、“50D” 之类没有明确面数的表达式时，会使用设置的面数\n\n【格式】\n.set\n.set [默认骰子面数]\n\n不带默认骰子面数则重置骰子的默认面数为 100\n\n【用法示例】\n.set\n.set 50",
             "setcoc": ".setcoc - COC 检定规则设置\n设置 COC 检定规则。新增检定规则请联系 DiceRobot 的 Master。\n默认检定规则序号为 0，名称为官方检定规则，判定标准为官方标准。同时附带序号为 1 的轮回 COC 房规。\n\n【格式】\n.setcoc\n.setcoc [检定规则序号]\n\n不带默检定规则序号即查看当前 COC 检定规则\n\n【用法示例】\n.setcoc\n.setcoc 1",
