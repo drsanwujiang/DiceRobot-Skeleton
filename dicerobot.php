@@ -1,7 +1,7 @@
 <?php
 
 /**
- * DiceRobot Skeleton 2.0.0
+ * DiceRobot Skeleton 2.1.0
  * ©2019-2020 Drsanwujiang
  *
  * DiceRobot skeleton application.
