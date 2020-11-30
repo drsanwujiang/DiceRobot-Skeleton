@@ -19,14 +19,14 @@ Co\run(function () {
     // Create App instance
     $app = $container->get(App::class);
 
-    // Create Server instance
-    $server = $container->get(Server::class);
+    // Register routes
+    $app->registerRoutes(require __DIR__ . "/custom_routes.php");
 
     // Initialize application
     $app->initialize();
 
-    // Register routes
-    $app->registerRoutes(require __DIR__ . "/custom_routes.php");
+    // Create Server instance
+    $server = $container->get(Server::class);
 
     // Start event loop
     $server->start();
