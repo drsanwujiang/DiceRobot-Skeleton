@@ -1,13 +1,14 @@
 # Changelog
 
 
-## 2.1.0 - 2020-12-01
+## 2.1.0 - 2020-12-02
 
 ### Added
 - Attached card deck
 
 ### Changed
 - Bootstrap logic
+- Update samples
 
 ### Refactored
 - Help docs
