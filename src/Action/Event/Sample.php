@@ -24,6 +24,6 @@ class Sample extends EventAction
      */
     public function __invoke(): void
     {
-        // Your logic
+        // TODO: 干点什么……
     }
 }
