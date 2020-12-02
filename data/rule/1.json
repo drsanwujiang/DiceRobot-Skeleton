@@ -5,8 +5,8 @@
   "levels": {
     "GreatSuccess": "{&result} == 1",
     "UltimateSuccess": "{&result} <= {&value} && {&result} <= 4",
-    "VeryHardSuccess": "{&result} <= {&value} \/ 5",
-    "HardSuccess": "{&result} <= {&value} \/ 2",
+    "VeryHardSuccess": "{&result} <= {&value} / 5",
+    "HardSuccess": "{&result} <= {&value} / 2",
     "Success": "{&result} <= {&value}",
     "Failure": "{&result} < 96",
     "UltimateFailure": "{&value} >= 50 && {&result} <= 99",
