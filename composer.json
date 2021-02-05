@@ -20,7 +20,7 @@
     "drsanwujiang/dicerobot": "^3.0.0-alpha"
   },
   "require-dev": {
-    "swoole/ide-helper": "^4.6"
+    "swoole/ide-helper": ">=4.6.0"
   },
   "autoload": {
     "psr-4": {
