@@ -1,6 +1,13 @@
 # Changelog
 
 
+## 3.0.0 - 2020-02-05
+
+### Changed
+- Update references
+- Update composer dependencies
+
+
 ## 2.1.0 - 2020-12-02
 
 ### Added

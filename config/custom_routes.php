@@ -13,6 +13,7 @@ return [
     "message" => [
         20 => [
 //            "sample" => \Custom\Action\Message\Sample::class,
+//            "示例" => \Custom\Action\Message\Sample::class,
         ]
     ],
 
