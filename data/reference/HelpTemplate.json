@@ -150,7 +150,7 @@
     "setcoc": "setcoc - COC 检定规则设置\r\n设置 COC 检定规则。新增检定规则请联系 DiceRobot 的 Master。\r\n默认检定规则序号为 0，名称为官方检定规则，判定标准为官方标准。同时附带序号为 1 的轮回 COC 房规。\r\n\r\n【格式】\r\n.setcoc\r\n.setcoc [检定规则序号]\r\n\r\n不带默检定规则序号即查看当前 COC 检定规则\r\n\r\n【用法示例】\r\n.setcoc\r\n.setcoc 1",
     "log": "log - 记录\r\n记录 TRPG 游戏过程。完成记录后请在 Log 阅览器(https://log.dicerobot.tech/)查看 Log。\r\n\r\n【格式】\r\n.log new\r\n.log start/on\r\n.log stop/off\r\n.log end\r\n\r\n【用法示例】\r\n.log new\r\n.log start\r\n.log off\r\n.log end",
     "draw": "draw - 抽牌\r\n从牌堆中不放回地抽牌。\r\n · 抽牌次数默认为1\r\n · 不指定牌堆名称，则需要先使用 .deck 指令设置默认牌堆\r\n\r\n【格式】\r\n.draw [抽牌次数]\r\n.draw [牌堆名称] [抽牌次数]\r\n\r\n【用法示例】\r\n.draw\r\n.draw 10\r\n.draw FGO\r\n.draw FGO 10",
-    "deck": "deck - 牌堆\r\n管理默认牌堆。\r\n · set/reset/clear/unset 仅限群主和管理员使用\r\n\r\n【格式】\r\n.deck set [牌堆名称]\r\n.deck reset\r\n.deck show\r\n.deck clear/unset\r\n\r\nclear 可以用 unset 替代。\r\n\r\n【用法示例】\r\n.deck set FGO\r\n.deck reset\r\n.deck show\r\n.deck clear/unset",
+    "deck": "deck - 牌堆\r\n管理默认牌堆。\r\n · set/reset/clear/unset 仅限群主和管理员使用\r\n\r\n【格式】\r\n.deck set [牌堆名称]\r\n.deck reset\r\n.deck show\r\n.deck clear/unset\r\n\r\n【用法示例】\r\n.deck set FGO\r\n.deck reset\r\n.deck show\r\n.deck clear/unset",
     "jrrp": "jrrp - 今日人品\r\n看看你今天的人品怎么样~\r\n\r\n【格式】\r\n.jrrp\r\n\r\n【用法示例】\r\n.jrrp",
     "orz": "orz - 磕头，砰砰砰！\r\n虔诚地向机器人磕个头~（说不定下次掷骰大成功概率 UP UP~）\r\n\r\n【格式】\r\n.orz\r\n\r\n【用法示例】\r\n.orz",
     "help": "help - 显示帮助信息\r\n显示帮助信息。\r\n\r\n【格式】\r\n.help\r\n.help [指令]\r\n.help [项目]\r\n\r\n【用法示例】\r\n.help\r\n.help r\r\n.help rb\r\n.help rp\r\n.help 惩罚骰\r\n.help 牌堆列表",
