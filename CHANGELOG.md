@@ -1,7 +1,7 @@
 # Changelog
 
 
-## 3.0.0 - 2020-08-02
+## 3.0.0 - 2021-08-02
 
 ### Changed
 - Update references
