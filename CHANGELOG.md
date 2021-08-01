@@ -1,11 +1,12 @@
 # Changelog
 
 
-## 3.0.0 - 2020-02-05
+## 3.0.0 - 2020-08-02
 
 ### Changed
 - Update references
 - Update composer dependencies
+- Update bootstrap logic
 
 
 ## 2.1.0 - 2020-12-02

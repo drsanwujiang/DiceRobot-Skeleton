@@ -16,11 +16,11 @@
   },
   "require": {
     "php": ">=7.4",
-    "ext-swoole": ">=4.6.0",
-    "drsanwujiang/dicerobot": "^3.0.0-alpha"
+    "ext-swoole": "^4.6.0",
+    "drsanwujiang/dicerobot": "^3.0.0"
   },
   "require-dev": {
-    "swoole/ide-helper": ">=4.6.0"
+    "swoole/ide-helper": "^4.6.0"
   },
   "autoload": {
     "psr-4": {
