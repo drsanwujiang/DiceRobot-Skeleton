@@ -1,6 +1,12 @@
 # Changelog
 
 
+## 3.0.1 - 2021-08-03
+
+### Changed
+- Update version
+
+
 ## 3.0.0 - 2021-08-02
 
 ### Changed
