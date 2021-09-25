@@ -62,6 +62,8 @@
       "hp": "item",
       "生命": "item",
       "jrrp": "jrrp",
+      "log": "log",
+      "记录": "log",
       "mp": "item",
       "魔法": "item",
       "name": "name",
@@ -70,6 +72,21 @@
       "昵称": "nn",
       "orz": "orz",
       "磕头": "orz",
+      "put": "put",
+      "放回": "put",
+      "put set": "put",
+      "放回 设置": "put",
+      "put top": "put",
+      "放回 牌堆顶": "put",
+      "放回 牌顶": "put",
+      "放回 顶部": "put",
+      "放回 顶": "put",
+      "put bottom": "put",
+      "put btm": "put",
+      "放回 牌堆底": "put",
+      "放回 牌底": "put",
+      "放回 底部": "put",
+      "放回 底": "put",
       "r": "r",
       "掷骰": "r",
       "ra": "ra",
@@ -131,6 +148,7 @@
       "ww": "w",
       "骰池w": "w",
 
+      "decks": "牌堆列表",
       "牌堆列表": "牌堆列表"
     }
   },
@@ -151,6 +169,7 @@
     "log": "log - 记录\n记录 TRPG 游戏过程。完成记录后请在 Log 阅览器(https://log.dicerobot.tech/)查看 Log。\n\n【格式】\n.log new\n.log start/on\n.log stop/off\n.log end\n\n【用法示例】\n.log new\n.log start\n.log off\n.log end",
     "draw": "draw - 抽牌\n从牌堆中不放回地抽牌。\n · 抽牌次数默认为1\n · 不指定牌堆名称，则需要先使用 .deck 指令设置默认牌堆\n\n【格式】\n.draw [抽牌次数]\n.draw [牌堆名称] [抽牌次数]\n\n【用法示例】\n.draw\n.draw 10\n.draw FGO\n.draw FGO 10",
     "deck": "deck - 牌堆\n管理默认牌堆。\n · set/reset/clear/unset 仅限群主和管理员使用\n\n【格式】\n.deck set [牌堆名称]\n.deck reset\n.deck show\n.deck clear/unset\n\n【用法示例】\n.deck set FGO\n.deck reset\n.deck show\n.deck clear/unset",
+    "put": "put - 放回\n将一张卡牌放回牌堆。\n · 放回前，需要先使用 .deck 指令设置默认牌堆。\n · 如果需要在私聊中放回，则需要先使用 .put set 指令设置要放回的群聊。有以下两种方式：\n     · 在群聊中使用，格式为 .put set\n     · 在私聊中使用，格式为 .put set [群号]\n\n【格式】\n.put set\n.put set [群号]\n.put top [卡牌]\n.put bottom/btm [卡牌]\n\n【用法示例】\n.put set\n.put set 12345678\n.put top 一张牌\n.put bottom 一张牌",
     "jrrp": "jrrp - 今日人品\n看看你今天的人品怎么样~\n\n【格式】\n.jrrp\n\n【用法示例】\n.jrrp",
     "orz": "orz - 磕头，砰砰砰！\n虔诚地向机器人磕个头~（说不定下次掷骰大成功概率 UP UP~）\n\n【格式】\n.orz\n\n【用法示例】\n.orz",
     "help": "help - 显示帮助信息\n显示帮助信息。\n\n【格式】\n.help\n.help [指令]\n.help [项目]\n\n【用法示例】\n.help\n.help r\n.help rb\n.help rp\n.help 惩罚骰\n.help 牌堆列表",
@@ -161,6 +180,6 @@
     "robot nn": "robot nn - 设置昵称\n设置机器人在本群聊的昵称（或者真 名 解 放）。\n · 机器人昵称的显示顺序为：本群聊的昵称 > QQ 昵称\n · 如果不 @机器人，则必须以 QQ 号或尾号的形式指定机器人\n\n【格式】\n@机器人 .robot/.bot nn\n.robot/.bot nn [机器人 QQ 号/QQ 号后四位]\n@机器人 .robot/.bot nn [昵称]\n.robot/.bot nn [机器人 QQ 号/QQ 号后四位] [昵称]\n\n不带昵称则为清除昵称\n\n【用法示例】\n@Sakura .robot nn\n.bot nn 12345678\n@Sakura .bot nn Sakura Tsang\n.robot nn 5678 Sakura Tsang",
     "robot goodbye": "robot goodbye - 退出群聊\n使机器人退出本群。\n · 仅限群主和管理员使用\n · 如果不 @机器人，则必须以 QQ 号或尾号的形式指定机器人\n · 好友/临时聊天使用本指令并不会有任何效果。\n\n【格式】\n@机器人 .robot/.bot goodbye\n.robot/.bot goodbye [机器人 QQ 号/QQ 号后四位]\n@机器人 .dismiss\n.dismiss [机器人 QQ 号/QQ 号后四位]\n\n【用法示例】\n@Sakura .robot goodbye\n.bot goodbye 12345678\n@Sakura .dismiss\n.dismiss 5678",
 
-    "牌堆列表": "当前加载了以下牌堆：\n\n塔罗牌：塔罗牌占卜/单张塔罗牌/圣三角牌阵/四要素牌阵/小十字牌阵/六芒星牌阵/凯尔特十字牌阵/塔罗牌"
+    "牌堆列表": "当前加载了以下牌堆：\n\n空牌堆：空牌堆/空白牌堆\n\n塔罗牌：塔罗牌占卜/单张塔罗牌/圣三角牌阵/四要素牌阵/小十字牌阵/六芒星牌阵/凯尔特十字牌阵/塔罗牌"
   }
 }

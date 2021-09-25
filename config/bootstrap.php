@@ -5,9 +5,13 @@ declare(strict_types=1);
 use DI\ContainerBuilder;
 use DiceRobot\{App, Server};
 
+use function Co\run;
+
 require_once __DIR__ . "/../vendor/autoload.php";
 
-Co\run(function () {
+$dicerobot_exit_code = 0;
+
+run(function () {
     $containerBuilder = new ContainerBuilder();
 
     // Set up settings
@@ -31,3 +35,5 @@ Co\run(function () {
     // Start event loop
     $server->start();
 });
+
+exit($dicerobot_exit_code);
