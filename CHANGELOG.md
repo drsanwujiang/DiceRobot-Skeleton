@@ -1,6 +1,16 @@
 # Changelog
 
 
+## 3.1.0 - 2021-09-25
+
+### Added
+- Exit code (for restart)
+
+### Changed
+- Update references
+- Update version
+
+
 ## 3.0.2 - 2021-08-03
 
 ### Changed
